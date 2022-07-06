@@ -1,0 +1,56 @@
+body {
+  color: #2B2A2C;
+}
+.header {
+  padding: 1.2rem 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user {
+  display: flex;
+}
+.user__content {
+  padding-left: 9px;
+}
+.user__avatar {
+  width: 57px;
+  height: 57px;
+  background-color: #2B2A2C;
+  border-radius: 100%;
+}
+.user__name {
+  font-size: 1.06rem;
+  color: #2B2A2C;
+  font-weight: 700;
+  line-height: 1.2rem;
+}
+.user__prof {
+  font-size: 0.8rem;
+  color: #6A696B;
+}
+.header__link {
+  color: #2B2A2C;
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin: 0 1rem;
+  transition: all 0.1s linear;
+}
+.header__link:last-child {
+  padding: 0.6rem 2rem;
+  border: 2px solid #2B2A2C;
+  border-radius: 20px;
+  margin-right: 0;
+}
+.header__link:last-child:hover {
+  border: 2px solid #2B2A2C;
+  background-color: #88E7FF;
+}
+.header__link:hover {
+  border-bottom: 3px solid #2B2A2C;
+}

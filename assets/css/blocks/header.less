@@ -1,0 +1,60 @@
+@import "../vars";
+.header{
+	padding: 1.2rem 0;
+}
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// HEADER USER
+.user{
+	display: flex;
+	&__content{
+		padding-left:9px;
+	}
+
+	&__avatar{
+		width: 57px;
+		height: 57px;
+		background-color: #2B2A2C;
+		border-radius: 100%;
+	}
+	&__name{
+		font-size: 1.06rem;
+		color: @colorPrimary;
+		font-weight: 700;
+		line-height: 1.2rem;
+	}
+	&__prof{
+		font-size: 0.8rem;
+		color:@colorsecondary;
+	}
+}
+.header__nav{
+
+}
+.header__link{
+	color:@colorPrimary;
+	text-decoration: none;
+	font-size: .93rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	margin: 0 1rem;
+	transition: all .1s linear;
+	&:last-child{
+		padding: .6rem 2rem;
+		border:2px solid @colorPrimary;
+		border-radius:20px;
+		margin-right:0;
+		&:hover{
+			border:2px solid @colorPrimary;
+			background-color: #88E7FF;
+		}
+	}
+	&:hover{
+		border-bottom: 3px solid @colorPrimary;
+	}
+}
