@@ -1,8 +1,91 @@
 body {
   color: #2B2A2C;
 }
+.social {
+  display: flex;
+}
+.social__item {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.social__behance {
+  background-color: #1869FF;
+  transition: all 0.2s linear;
+}
+.social__behance:hover {
+  transform: translateY(-5px);
+}
+.social__google {
+  background-color: #D64B40;
+  transition: all 0.2s linear;
+}
+.social__google:hover {
+  transform: translateY(-5px);
+}
+.social__linkedin {
+  background-color: #007BB6;
+  transition: all 0.2s linear;
+}
+.social__linkedin:hover {
+  transform: translateY(-5px);
+}
+.social__facebook {
+  background-color: #3A5898;
+  transition: all 0.2s linear;
+}
+.social__facebook:hover {
+  transform: translateY(-5px);
+}
+.social__instagram {
+  background-color: #D72F6E;
+  transition: all 0.2s linear;
+}
+.social__instagram:hover {
+  transform: translateY(-5px);
+}
+.social__twitter {
+  background-color: #52A5E5;
+  transition: all 0.2s linear;
+}
+.social__twitter:hover {
+  transform: translateY(-5px);
+}
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 40px;
+  border: 1px solid rgba(43, 42, 44, 0.7);
+  border-radius: 40px;
+  color: #2b2a2c;
+  font-weight: normal;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  color: #2B2A2C;
+  border-color: #2b2a2c;
+}
+.btn--black {
+  font-weight: 700;
+  border: 1px solid inherit;
+  background-color: #2B2A2C;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+.btn--black:hover {
+  border-color: transparent;
+  background-color: #2B2A2C;
+  color: #fff;
+}
 .header {
   padding: 1.2rem 0;
+  height: 15vh;
 }
 .header__inner {
   display: flex;
@@ -31,6 +114,9 @@ body {
   font-size: 0.8rem;
   color: #6A696B;
 }
+.user:hover {
+  cursor: pointer;
+}
 .header__link {
   color: #2B2A2C;
   text-decoration: none;
@@ -49,8 +135,122 @@ body {
 }
 .header__link:last-child:hover {
   border: 2px solid #2B2A2C;
-  background-color: #88E7FF;
+  background-color: rgba(136, 231, 255, 0.3);
 }
 .header__link:hover {
   border-bottom: 3px solid #2B2A2C;
+}
+.intro__inner {
+  height: 85vh;
+  display: flex;
+  border-bottom: 1px solid rgba(141, 141, 142, 0.4);
+}
+.intro__content {
+  width: 50%;
+  margin: 100px 0 120px 0;
+}
+.intro__subtitle {
+  font-weight: 200;
+  font-size: 2.13rem;
+  color: #2B2A2C;
+}
+.intro__title {
+  font-size: 3rem;
+  color: #2B2A2C;
+  font-weight: 700;
+  margin: 5px 0px;
+}
+.intro__text {
+  font-size: 1.2rem;
+  color: rgba(43, 42, 44, 0.3);
+}
+.intro__photo {
+  width: 50%;
+  position: relative;
+}
+.intro__bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.intro__person {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  right: 0;
+}
+.social--intro .social__item {
+  margin: 20px 7px 0px 0px;
+}
+.btn--intro {
+  margin-top: 40px;
+}
+.btn--intro + .btn--intro {
+  margin-left: 15px;
+}
+.works {
+  padding: 40px 0;
+}
+.works__nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.works__nav-link {
+  font-size: 0.9rem;
+  color: rgba(43, 42, 44, 0.7);
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+.works__nav-link + .works__nav-link {
+  margin-left: 20px;
+}
+.works__nav-link:hover {
+  color: #2B2A2C;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.portfolio__item {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  flex-basis: 30%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: box-shadow 0.2s linear;
+}
+.portfolio__item:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+.portfolio__img {
+  width: 100%;
+  height: 300px;
+  background-color: #8D8D8E;
+}
+.portfolio__content {
+  text-transform: uppercase;
+  padding: 20px 15px 15px 15px;
+}
+.portfolio__category {
+  font-size: 0.8rem;
+}
+.portfolio__title {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.06rem;
+}
+.btn--works {
+  padding: 12px 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #2B2A2C;
+  border-color: #2B2A2C;
+  margin: 10px auto 0 auto;
 }

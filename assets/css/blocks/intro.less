@@ -1,0 +1,67 @@
+@import "../vars";
+
+.intro{
+	&__inner{
+		height: 85vh;
+		display: flex;
+		border-bottom:1px solid fade(@colorGray, 40%);
+	}
+
+	// side content (left)
+	&__content{
+		width: 50%;
+		margin: 100px 0 120px 0;
+	}
+	&__subtitle{
+		font-weight: 200;
+		font-size: 2.13rem;
+		color:@colorPrimary;
+	}
+	&__title{
+		font-size: 3rem;
+		color:@colorPrimary;
+		font-weight: 700;
+		margin:5px 0px;
+	}
+	&__text{
+		font-size: 1.2rem;
+		color:fade(@colorPrimary, 30%);
+	}
+
+
+	// side photo (rigth)
+	&__photo{
+		width: 50%;
+		position: relative;
+	}
+
+	&__bg{
+		position:absolute;
+		right: 0; 
+		top: 0;
+		width: 100%;
+		height: auto;
+	}
+	&__person{
+		position:absolute;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		right: 0;
+	}
+
+}
+.social--intro{
+	.social__item{
+		margin: 20px 7px 0px 0px;
+	}
+}
+.btn--intro{
+	margin-top: 40px;
+	& + &{
+		margin-left: 15px;
+	}
+}
+
+
+

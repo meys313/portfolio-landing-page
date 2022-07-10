@@ -1,0 +1,71 @@
+@import "../vars";
+.works{
+	padding: 40px 0;
+
+	&__nav{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+	&__nav-link{
+		font-size: 0.9rem;
+		color:fade(@colorPrimary, 70%);
+		text-decoration: none;
+		transition: color .2s linear;
+		&+&{
+			margin-left: 20px;
+		}
+		&:hover{
+			color:@colorPrimary;
+		}
+	}
+}
+
+.portfolio{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item{
+		box-shadow: 0 0 4px fade(#000, 25%);
+		border-radius: 10px;
+		flex-basis:30%;
+		margin-bottom: 30px;
+		overflow: hidden;
+		transition: box-shadow .2s linear;
+		&:hover{
+			box-shadow: 0 0 25px fade(#000, 25%);
+		}
+	}
+	&__img{
+		width: 100%;
+		height: 300px;
+		background-color: @colorGray;
+	}
+	&__content{
+		text-transform: uppercase;
+		padding: 20px 15px 15px 15px;
+	}
+
+	&__category{
+		font-size: 0.8rem;
+	}
+	&__title{
+		margin-top: 12px;
+		display: flex;
+		justify-content: space-between;
+		font-weight: 700;
+		font-size: 1.06rem;
+	}
+	&__year{
+	
+	}
+}
+
+.btn--works{
+	padding:12px 20px;
+	font-size: 0.8rem;
+	font-weight: 700;
+	color:@colorPrimary;
+	border-color:@colorPrimary;
+	margin: 10px auto 0 auto;
+}

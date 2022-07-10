@@ -1,0 +1,63 @@
+@import "vars";
+
+.color(@bg){
+	background-color: @bg;
+	transition: all .2s linear;
+	&:hover{
+		transform: translateY(-5px);
+	}
+}
+.social{
+	display: flex;
+	&__item{
+		text-decoration: none;
+		color:#fff;
+		font-size: 1.8rem;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+	}
+
+	&__behance{.color(#1869FF)} 
+	&__google{.color(#D64B40)}
+	&__linkedin{.color(#007BB6)}
+	&__facebook{.color(#3A5898)}
+	&__instagram{.color(#D72F6E)}
+	&__twitter{.color(#52A5E5)}
+
+}
+
+// btn
+
+.btn{
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding:20px 40px;
+	border:1px solid fade(@colorPrimary, 70%);
+	border-radius:40px;
+	color: fade(@colorPrimary, 100%);
+	font-weight: normal;
+	transition: all .3s linear;
+	&:hover{
+		color:@colorPrimary;
+		border-color:fade(@colorPrimary, 100%);
+	}
+}
+
+.btn--black{
+	font-weight: 700;
+	border:1px solid inherit;
+	background-color: @colorPrimary;
+	color:#fff;
+	transition: all .3s linear;
+	&:hover{
+		border-color:transparent;
+		background-color:@colorPrimary;
+		color:#fff;
+		
+	}
+}

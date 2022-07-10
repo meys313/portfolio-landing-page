@@ -1,6 +1,7 @@
 @import "../vars";
 .header{
 	padding: 1.2rem 0;
+	height: 15vh;
 }
 .header__inner{
 	display: flex;
@@ -23,13 +24,16 @@
 	}
 	&__name{
 		font-size: 1.06rem;
-		color: @colorPrimary;
+		color: @colorPrimary;  
 		font-weight: 700;
 		line-height: 1.2rem;
 	}
 	&__prof{
 		font-size: 0.8rem;
 		color:@colorsecondary;
+	}
+	&:hover{
+		cursor: pointer;
 	}
 }
 .header__nav{
@@ -51,7 +55,7 @@
 		margin-right:0;
 		&:hover{
 			border:2px solid @colorPrimary;
-			background-color: #88E7FF;
+			background-color: fade(@colorBlue, 30%);
 		}
 	}
 	&:hover{
