@@ -1,0 +1,53 @@
+@import "../vars";
+.about{
+	margin-top: 120px;
+	.container{
+		display: flex;
+		align-items: center;
+	}
+	&__subtitle{
+		text-transform: uppercase;
+		font-size: 3rem;	
+		font-weight: 700;
+	}
+
+	&__title{
+		color:fade(@colorPrimary, 30%);
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 6rem;
+		margin-bottom: 10px;
+	}
+
+	&__photo{
+		position:relative;
+		flex-basis:50%;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__content{
+		flex-basis: 50%;
+	}
+	&__photo + &__content{
+		padding-left:3%;
+	}
+
+	&__square{
+		position:absolute;
+		z-index: -1;
+		bottom: 0;
+		left: 0;
+		height: 60%;
+		width:80%;
+		background-color: #EFEFEF;
+	}
+
+}
+
+.text--about{
+	margin-bottom: 40px;
+}

@@ -39,12 +39,15 @@
 	padding:20px 40px;
 	border:1px solid fade(@colorPrimary, 70%);
 	border-radius:40px;
-	color: fade(@colorPrimary, 100%);
-	font-weight: normal;
+	color: fade(@colorPrimary, 70%);
+	font-weight: 400;
 	transition: all .3s linear;
 	&:hover{
 		color:@colorPrimary;
 		border-color:fade(@colorPrimary, 100%);
+	}
+	&+&{
+		margin-left: 15px;
 	}
 }
 
@@ -60,4 +63,34 @@
 		color:#fff;
 		
 	}
+}
+
+.btn--small{
+	padding:12px 20px;
+	font-size: 0.8 rem;
+	margin: 10px auto 0 auto;
+}	
+
+.btn--black--small{
+	padding:12px 30px;
+	font-size: 0.8rem;
+	font-weight: 700;
+	border:1px solid inherit;
+	background-color: @colorPrimary;
+	color:#fff;
+	transition: all .3s linear;
+	&:hover{
+		border-color:transparent;
+		background-color:@colorPrimary;
+		color:#fff;
+		
+	}
+}
+
+.text{
+	font-size: .8rem;
+	color:@colorText;
+	line-height: 1.6rem;
+	font-weight: 300;
+
 }
